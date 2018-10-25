@@ -1,0 +1,7 @@
+Natvie-App/
+node_modules/
+.DS_Store
+.idea/
+webpack.config.js
+package-lock.json
+dist/
