@@ -1,31 +1,35 @@
 <template>
-<div class="home">
-  <Menulist/>
-</div>
+  <div class="Home">
+    <div class="content">
+      <Menulist/>
+    </div>
+  </div>
 </template>
 <script>
-import Hub from "@/components/Hub";
 import Menulist from '@/components/Menulist'
 export default {
   data() {
-    return {};
+    return {
+      
+    };
   },
   methods: {},
   created() {
-    Hub.$on("closed", data => {});
-    setTimeout(() => {}, 5000);
   },
-  components: {Menulist}
+  components: {Menulist,}
 };
 </script>
 
 <style lang="scss" scoped>
-.home {
+.Home {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  // background: url(/static/bg.jpg) no-repeat;
   background: #ddd;
   background-size: auto 99%;
+  padding: 1rem 0rem;
+  .content{
+        padding: 0.3rem;
+  }
 }
 </style>
